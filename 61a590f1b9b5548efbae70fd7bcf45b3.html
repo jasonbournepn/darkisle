@@ -118,6 +118,19 @@ body {
     font-weight: bold;
 }
 
+.transmission-header::before {
+    content: 'INCOMING TRANSMISSION';
+}
+
+.transmission-header::after {
+    content: 'SIGNAL STRENGTH: 26%';
+    display: block;
+    font-size: 9px;
+    margin-top: 3px;
+    animation: flicker 3s infinite, textGlitch 4s infinite;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
 /* Glitch overlay */
 .glitch-overlay {
     position: absolute;
@@ -257,6 +270,7 @@ body {
     });
 </script>
 </body></html>
+
 
 
 
